@@ -15,6 +15,28 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
 
 .link {
   text-decoration: none;
@@ -22,6 +44,19 @@ body {
 
 .list {
   list-style: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .visually-hidden {
@@ -94,6 +129,8 @@ body {
 /* ---------------------HERO--------------------- */
 .hero {
   background-color: var(--dark-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -116,7 +153,6 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -199,7 +235,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
-  cursor: pointer;
 }
 
 .portfolio-btn:hover,
