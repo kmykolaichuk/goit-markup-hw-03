@@ -7,6 +7,7 @@
   --dark-background-color: #2f303a;
   --secondary-background-color: #f5f4fa;
   --btn-background-color: #188ce8;
+  --border-color: #ececec;
 }
 
 body {
@@ -88,9 +89,24 @@ img {
 /* ---------------------HEADER--------------------- */
 .header {
   background-color: var(--primary-white-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 93px;
   color: var(--primary-black-color);
 }
 
@@ -98,7 +114,18 @@ img {
   color: var(--accent-color);
 }
 
+.header-list {
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -114,7 +141,14 @@ img {
   color: var(--accent-color);
 }
 
+.contacts {
+  margin-left: auto;
+}
+
 .header-contacts {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -134,6 +168,7 @@ img {
 }
 
 .hero-title {
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
