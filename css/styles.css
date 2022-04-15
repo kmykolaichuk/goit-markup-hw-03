@@ -38,6 +38,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -226,6 +228,10 @@ img {
 
 /* ---------------------WORKING--------------------- */
 
+.working {
+  padding-top: 0;
+}
+
 .working .title {
   margin-bottom: 50px;
 }
@@ -317,14 +323,8 @@ img {
 
 /* ---------------------PORTFOLIO--------------------- */
 
-.portfolio .list {
-  display: flex;
-  margin-left: -30px;
-  margin-top: -30px;
-  flex-wrap: wrap;
-}
-
 .portfolio-list {
+  display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -354,6 +354,19 @@ img {
   background-color: var(--accent-color);
 }
 
+.portfolio-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.portfolio-card-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 .portfolio-card-title {
   margin-bottom: 4px;
   font-size: 18px;
@@ -366,12 +379,6 @@ img {
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
-}
-
-.portfolio-card-item {
-  flex-basis: calc((100% - 9 * 30px) / 9);
-  margin-left: 30px;
-  margin-top: 30px;
 }
 
 .portfolio-card-content {
