@@ -52,7 +52,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
 .section {
@@ -104,11 +103,8 @@ img {
 
 .header-logo {
   display: block;
-  width: 145px;
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin-right: 93px;
-  color: var(--primary-black-color);
+   color: var(--primary-black-color);
 }
 
 .accent {
@@ -245,7 +241,26 @@ img {
   background-color: var(--secondary-background-color);
 }
 
+.team .title {
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+}
+
+.team-item {
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-white-color);
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-item-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -262,10 +277,14 @@ img {
 /* ---------------------FOOTER--------------------- */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--dark-background-color);
 }
 
 .footer-logo {
+  display: block;
+  margin-bottom: 20px;
   color: var(--primary-white-color);
 }
 
@@ -275,7 +294,7 @@ img {
 }
 
 .footer-link {
-  color: var(--primary-white-color);
+   color: var(--primary-white-color);
 }
 
 .footer-link:hover,
@@ -286,6 +305,9 @@ img {
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 
 .footer-contacts:hover,
 .footer-contacts:focus {
