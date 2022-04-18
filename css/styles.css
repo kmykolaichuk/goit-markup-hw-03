@@ -325,6 +325,7 @@ img {
 
 .portfolio-list {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -357,14 +358,18 @@ img {
 .portfolio-card-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
 }
 
 .portfolio-card-item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin-left: 30px;
-  margin-top: 30px;
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.portfolio-card-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.portfolio-card-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
 }
 
 .portfolio-card-title {
